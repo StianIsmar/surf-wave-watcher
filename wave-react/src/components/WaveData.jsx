@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-
-
-
-
-
 class WavData extends Component {
     render() {
         return (

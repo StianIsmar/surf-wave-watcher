@@ -1,8 +1,8 @@
 .jumbotron {
-    margin-bottom: 4em;
-  }
+    margin-bottom: 0;
+}
   .person-wrapper {
-    margin-bottom: 2em;
+    margin-bottom:0;
   }
   
   .profile-pic {
@@ -20,3 +20,36 @@
     margin-bottom: 1em;
   }
 
+.top-image1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    width: 100%;
+    }
+.top-part {
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#3fb0ac;
+    top: 0;
+    left: 0;
+    height: auto;
+    color: black;
+    text-align: left;
+    padding-top: 6em;
+    overflow: auto;
+
+
+}
+.container{
+    color: #fae596;
+}
+.picture1{
+    float: right;
+    height: auto;
+    width: 40%;
+    padding-right: 3em;
+    bottom: 4em;
+    position: relative;    
+}

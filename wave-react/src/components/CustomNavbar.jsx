@@ -6,9 +6,9 @@ import './CustomNavbar.css'
 export default class CustomNavbar extends Component {
   render() {
     return (
-<Navbar sticky="top" bg="light" expand="lg">
+<Navbar bg="light" variant="dark" expand="lg">
 
-  <Navbar.Brand href="/" to="/" componentClass ={Link}> Wave Watcher</Navbar.Brand>
+  <Navbar.Brand href="/" to="/" componentClass ={Link} > Wave Watcher</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav pullRight className="mr-auto">
