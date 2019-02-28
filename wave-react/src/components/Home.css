@@ -39,8 +39,7 @@
     text-align: left;
     padding-top: 6em;
     overflow: auto;
-
-
+    
 }
 .container{
     color: #fae596;
@@ -53,3 +52,19 @@
     bottom: 4em;
     position: relative;    
 }
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    .top-part {
+        font-size: 1.5em; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 900px) { /* screen size until 1000px */
+    .top-part {
+        font-size: 1.2em; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 700px) { /* screen size until 500px */
+    .top-part {
+        font-size: 0.8em; /* 0.8x default size */
+        }
+    }
