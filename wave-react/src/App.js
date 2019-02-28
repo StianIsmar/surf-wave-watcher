@@ -5,12 +5,13 @@ import Home from './components/Home'
 import News from './components/News'
 import About from './components/About'
 import Navbar from './components/CustomNavbar'
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="wrapper">
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />

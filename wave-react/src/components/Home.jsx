@@ -15,21 +15,21 @@ export default class Home extends Component{
                 </Link>
                 </Jumbotron>
                 <Row className = "show-grid text-center">
-                <Col xs = {12} sm= {4} className = "person-wrapper">
-                <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
-                    <h3>Hustadvika</h3>
-                    <p> A picture from Hustadvika</p>
-                </Col>
-                <Col xs = {12} sm= {4} className = "person-wrapper">
-                <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
-                    <h3>Hustadvika</h3>
-                    <p> A picture from Hustadvika</p>
-                </Col>
-                <Col xs = {12} sm= {4} className = "person-wrapper">
-                <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
-                    <h3>Hustadvika</h3>
-                    <p> A picture from Hustadvika</p>
-                </Col>
+                    <Col xs = {12} sm= {4} className = "person-wrapper">
+                    <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
+                        <h3>Hustadvika</h3>
+                        <p> A picture from Hustadvika</p>
+                    </Col>
+                    <Col xs = {12} sm= {4} className = "person-wrapper">
+                    <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
+                        <h3>Hustadvika</h3>
+                        <p> A picture from Hustadvika</p>
+                    </Col>
+                    <Col xs = {12} sm= {4} className = "person-wrapper">
+                    <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />
+                        <h3>Hustadvika</h3>
+                        <p> A picture from Hustadvika</p>
+                    </Col>
                 </Row>
             </Container>
         )
