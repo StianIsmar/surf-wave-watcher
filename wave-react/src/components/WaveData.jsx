@@ -7,19 +7,20 @@ class WaveData extends Component {
     componentDidMount() {
         console.log("Fire getWaveData!")
       }
-
+    
 
     render() {
         return (
             <div>
-            <Button onClick = {this.props.getWaveData}>
-
+            <Button onClick={() =>
+            this.props.getWaveData()
+            }>
+                Press to get latest forecast
             </Button>
             </div>
         );
     }
 }
-
 function mapStateToProps (state) {
     return ({
       // title: state.title,
@@ -30,11 +31,11 @@ function mapStateToProps (state) {
   function mapDispatchToProps (dispatch) {
     return (
       {
-        getWaveData:
+        getWaveData: () => {
             dispatch(fetchWaveData())
         }
+    }
     )
   }
-  
   export default connect(mapStateToProps, mapDispatchToProps)(WaveData)
   
