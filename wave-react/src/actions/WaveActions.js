@@ -17,7 +17,6 @@ export function fetchWaveData() {
       .then(res => res.json())
       .then(json => {
         dispatch(fetchWaveDataSuccess(json))
-        console.log("OKKKKKKKKKKKKKKKKKK")
         return json
       })
       .catch(error => dispatch(fetchWaveDataFailure(error)))
