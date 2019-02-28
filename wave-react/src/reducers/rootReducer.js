@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import { MovieReducer } from './MovieReducer'
+import { WaveReducer } from './WaveReducer'
 
 export default combineReducers({
-  MovieReducer: MovieReducer
+  WaveReducer: WaveReducer
 })
