@@ -9,10 +9,14 @@ import store from '../store/index'
 // Async action creator for fetching movies.
 export function fetchWaveData() {
   let fetchURL = "http://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673"
+  fetchURL = fetchURL + "&fields=timestamp,wind.*,swell.*"
+  console.log("fetchURL", fetchURL)
   return dispatch => {
     // Use middleware to dispatch several functions and wait for the HTTP response.
     dispatch(fetchWaveDataBegin())
-    return fetch(fetchURL)
+    return fetch(fetchURL, {
+      mode: 'no-cors' // 'cors' by default
+    })
       .then(handleErrors)
       .then(res => res.json())
       .then(json => {

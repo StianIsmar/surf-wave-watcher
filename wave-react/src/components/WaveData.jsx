@@ -16,13 +16,16 @@ class WaveData extends Component {
             }>
                 Press to get latest forecast
             </Button>
+            <div>
+                {this.props.items}
+            </div>
             </div>
         );
     }
 }
 function mapStateToProps (state) {
     return ({
-      // title: state.title,
+      items: state.items,
       //genre: state.genre
     }
     )
