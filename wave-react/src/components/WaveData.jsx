@@ -7,25 +7,38 @@ import './WaveData.css'
 class WaveData extends Component {
     componentDidMount() {
         console.log("Fire getWaveData!")
+        this.props.getWaveData()
       }
+
+      createListItems(){
+        console.log("OKKKK:",this.props.items)  
+        return this.props.items.map((it) => {
+              return (
+                  <li keyParams = {it.timestamp}> {it.swell.absMinBreakingHeight} {it.wind.speed}</li>
+              )
+          })
+      }
+      //<div className="btn">
+      //<Button variant="primary" size="lg" onClick={() =>
+      //this.props.getWaveData()
+      //}>
+       //   Press to get latest forecast
+      //</Button>
+      
+
     render() {
         return (
-            <div className="btn">
-            <Button variant="primary" size="lg" onClick={() =>
-            this.props.getWaveData()
-            }>
-                Press to get latest forecast
-            </Button>
-            <div>
-                {this.props.items}
-            </div>
-            </div>
+          
+                <ul>
+                {this.createListItems()}
+                </ul>
+    
         );
     }
 }
 function mapStateToProps (state) {
     return ({
-      items: state.items,
+      items: state.WaveReducer.items
       //genre: state.genre
     }
     )
