@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchWaveData } from '../actions/WaveActions'
-import { Button } from "react-bootstrap"
+import { Button,CardGroup } from "react-bootstrap"
 import './WaveData.css'
 import WaveCardComp from './WaveCardComp'
+import './WaveCard.css'
 
-class WaveData extends Component {
+class WaveCard extends Component {
     componentDidMount() {
         console.log("Fire getWaveData!")
         this.props.getWaveData()
       }
 
-      createListItems(){
+      /*createListItems(){
         console.log("OKKKK:",this.props.items)  
         return this.props.items.map((it) => {
               return (
                   <li keyParams = {it.timestamp}> {it.swell.absMinBreakingHeight} {it.wind.speed}</li>
               )
           })
-      }
+      }*/
       //<div className="btn">
       //<Button variant="primary" size="lg" onClick={() =>
       //this.props.getWaveData()
@@ -29,13 +30,17 @@ class WaveData extends Component {
 
     render() {
         return (
-          <div>
-              <WaveCardComp />
-                <ul>
-                {this.createListItems()}
-                </ul>
-                
-                </div>
+            //<div className = "cardwrapper">
+            <CardGroup Col sm="4">
+            {this.props.items && this.props.items.map((it) =>
+              <WaveCardComp
+              key = {it.timestamp}
+              minbreaking={it.swell.absMinBreakingHeight}
+              swellimg = {it.charts.swell}
+              />
+            )}
+            </CardGroup>
+            //</div>
         );
     }
 }
@@ -55,5 +60,7 @@ function mapStateToProps (state) {
     }
     )
   }
-  export default connect(mapStateToProps, mapDispatchToProps)(WaveData)
+  export default connect(mapStateToProps, mapDispatchToProps)(WaveCard)
+  
+
   

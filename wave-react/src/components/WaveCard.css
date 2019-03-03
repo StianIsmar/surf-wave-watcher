@@ -1,0 +1,32 @@
+
+.cardwrapper{
+    display:inline-grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  margin: 0 auto;
+  max-width: 80vw;
+  
+  @media (max-width: 1500px){
+    grid-template-columns: repeat(2,1fr);
+    max-width: 30vw;
+
+}
+  @media (max-width: 860px){
+    grid-template-columns: repeat(1,1fr);
+    max-width: 100vw;
+    grid-row-gap: 20px;
+}
+
+}
+
+.swellimage{
+background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  --background-image: url(${props => props.img});
+}

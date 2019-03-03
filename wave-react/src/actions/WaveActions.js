@@ -9,7 +9,7 @@ import store from '../store/index'
 // Async action creator for fetching movies.
 export function fetchWaveData() {
   let fetchURL = "http://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673"
-  fetchURL = fetchURL + "&fields=timestamp,wind.*,swell.*"
+  fetchURL = fetchURL + "&fields=timestamp,wind.*,swell.*,charts.*"
   console.log("fetchURL", fetchURL)
   return dispatch => {
     // Use middleware to dispatch several functions and wait for the HTTP response.
