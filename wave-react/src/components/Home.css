@@ -3,6 +3,7 @@
 }
   .person-wrapper {
     margin-bottom:0;
+    vertical-align: none;
   }
   
   .profile-pic {
@@ -23,6 +24,7 @@
 .top-image1 {
     display: block;
     margin: 0 auto;
+    margin-bottom: 1em;
     margin-top: 0;
     width: 100%;
     }

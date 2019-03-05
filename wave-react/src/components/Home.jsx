@@ -23,7 +23,9 @@ export default class Home extends Component{
                 <Button  bsStyle="primary"> About</Button>
                 </Link>
                 </Jumbotron>
+
                 <Image src="assets/surfer_header.jpg" className = "top-image1"  />
+
                 <Row className = "show-grid text-center">
                     <Col xs = {12} sm= {4} className = "person-wrapper">
                     <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />

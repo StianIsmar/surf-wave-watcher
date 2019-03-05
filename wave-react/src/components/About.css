@@ -1,9 +1,15 @@
 .header-image {
-    width: 30%;
-    margin-top: -2em;
-    margin-bottom: 2em;
+    width: 100%;
+    margin-top: 0;
 }
 .about-profile-pic {
-    float:left;
+    float:center;
     margin: 0 1em 1em 0;
+     display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    margin-top: 0;
+width: fill;
+    height: 20%;
+
 }

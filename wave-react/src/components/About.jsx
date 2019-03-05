@@ -6,18 +6,18 @@ class About extends Component {
     render() {
         return (
             <div>
-             <Image src = "assets/header_image.jpeg" className = "header-image"/>
-             <Container>
+                <Container>
+                <Row>
+             <Image src = "assets/header_image.jpeg" className = "header-image" />
+             </Row>
                  <Row>
-                 <Col xs = {12} sm = {8} smOffeset = {2}>
                  <Image src = "assets/maxresdefault.jpg" className = "about-profile-pic" />
-
-                 </Col>
                  </Row>
             </Container>
             </div>
         );
     }
 }
+//<Col xs = {12} sm = {8} smOffeset = {2}>
 
 export default About;
