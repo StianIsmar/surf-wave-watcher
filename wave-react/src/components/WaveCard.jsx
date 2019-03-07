@@ -6,14 +6,18 @@ import './WaveData.css'
 import WaveCardComp from './WaveCardComp'
 import './WaveCard.css'
 import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody ,CardColumns,CardRows} from 'reactstrap';
-import { CardDeck } from 'react-bootstrap';
+    CardSubtitle, CardBody ,CardColumns} from 'reactstrap';
 
 class WaveCard extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {count: 0}
+    }
     componentDidMount() {
         console.log("Fire getWaveData!")
         this.props.getWaveData()
       }
+    
 
       /*createListItems(){
         console.log("OKKKK:",this.props.items)  
@@ -30,30 +34,25 @@ class WaveCard extends Component {
        //   Press to get latest forecast
       //</Button>
       // CardGroup Col sm="4"
-      mapping(){
-        let counter = 0;
-        return this.props.items.map(item => 
-        <CardDeck>
-    {
-        this.props.items && this.props.items.map((it,counter) =>
-      <WaveCardComp
-      key = {it.timestamp}
-      minbreaking={it.swell.absMinBreakingHeight}
-      swellimg = {it.charts.swell}
-      count = {counter = counter + 1}
-      />
-    )}
 
-    </CardDeck>
-           )
-
-    }
     render() {
-        
         return (
-            <div>
-       {this.mapping()}
-            </div>
+            //<div className = "cardwrapper">
+            <CardGroup>
+                    <CardColumns>
+
+                
+            {this.props.items && this.props.items.map((it) =>
+              <WaveCardComp
+              key = {it.timestamp}
+              minbreaking={it.swell.absMinBreakingHeight}
+              swellimg = {it.charts.swell}
+              />
+            )}
+                        </CardColumns>
+
+            </CardGroup>
+            //</div>
         );
     }
 }
