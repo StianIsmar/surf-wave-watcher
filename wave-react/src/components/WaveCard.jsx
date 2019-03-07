@@ -6,7 +6,8 @@ import './WaveData.css'
 import WaveCardComp from './WaveCardComp'
 import './WaveCard.css'
 import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody ,CardColumns} from 'reactstrap';
+    CardSubtitle, CardBody ,CardColumns,CardRows} from 'reactstrap';
+import { CardDeck } from 'react-bootstrap';
 
 class WaveCard extends Component {
     componentDidMount() {
@@ -29,25 +30,30 @@ class WaveCard extends Component {
        //   Press to get latest forecast
       //</Button>
       // CardGroup Col sm="4"
+      mapping(){
+        let counter = 0;
+        return this.props.items.map(item => 
+        <CardDeck>
+    {
+        this.props.items && this.props.items.map((it,counter) =>
+      <WaveCardComp
+      key = {it.timestamp}
+      minbreaking={it.swell.absMinBreakingHeight}
+      swellimg = {it.charts.swell}
+      count = {counter = counter + 1}
+      />
+    )}
 
+    </CardDeck>
+           )
+
+    }
     render() {
+        
         return (
-            //<div className = "cardwrapper">
-            <CardGroup>
-                    <CardColumns>
-
-                
-            {this.props.items && this.props.items.map((it) =>
-              <WaveCardComp
-              key = {it.timestamp}
-              minbreaking={it.swell.absMinBreakingHeight}
-              swellimg = {it.charts.swell}
-              />
-            )}
-                        </CardColumns>
-
-            </CardGroup>
-            //</div>
+            <div>
+       {this.mapping()}
+            </div>
         );
     }
 }

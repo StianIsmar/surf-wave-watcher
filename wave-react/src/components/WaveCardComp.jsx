@@ -18,14 +18,14 @@ import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
 class WaveCardComp extends Component {
     render() {
         return (
-          <Card>
+          <Card className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333', padding: 0}}>
           <CardImg top width="100%" src={this.props.swellimg} alt="Card image cap" />
           <CardBody>
             <CardTitle>Card title</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>              {this.props.minbreaking}
             </CardText>
-            <Button>Button</Button>
+            <Button >{this.props.count}</Button>
           </CardBody>
         </Card>
 
@@ -35,7 +35,8 @@ class WaveCardComp extends Component {
 WaveCardComp.propTypes = {
     minbreaking: PropTypes.number,
     swellimg: PropTypes.string,
-    key:PropTypes.number
+    key:PropTypes.number,
+    count: PropTypes.number
   }
 
 export default WaveCardComp;
