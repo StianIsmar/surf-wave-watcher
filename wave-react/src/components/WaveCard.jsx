@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchWaveData } from '../actions/WaveActions'
-import { Button,CardGroup } from "react-bootstrap"
+// import { Button,CardGroup } from "react-bootstrap"
 import './WaveData.css'
 import WaveCardComp from './WaveCardComp'
 import './WaveCard.css'
+import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
+    CardSubtitle, CardBody ,CardColumns} from 'reactstrap';
 
 class WaveCard extends Component {
     componentDidMount() {
@@ -26,12 +28,15 @@ class WaveCard extends Component {
       //}>
        //   Press to get latest forecast
       //</Button>
-      
+      // CardGroup Col sm="4"
 
     render() {
         return (
             //<div className = "cardwrapper">
-            <CardGroup Col sm="4">
+            <CardGroup>
+                    <CardColumns>
+
+                
             {this.props.items && this.props.items.map((it) =>
               <WaveCardComp
               key = {it.timestamp}
@@ -39,6 +44,8 @@ class WaveCard extends Component {
               swellimg = {it.charts.swell}
               />
             )}
+                        </CardColumns>
+
             </CardGroup>
             //</div>
         );
