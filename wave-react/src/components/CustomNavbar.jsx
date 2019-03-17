@@ -8,12 +8,15 @@ export default class CustomNavbar extends Component {
     return (
 <Navbar bg="light" variant="dark" expand="lg">
 
-  <Navbar.Brand href="/" to="/" componentClass ={Link} > Wave Watcher</Navbar.Brand>
+  <Navbar.Brand href="/" to="/" componentClass ={Link} >   
+  <img src="http://www.clker.com/cliparts/E/b/C/u/2/k/wave-white-hi.png" ></img>
+  <h className = "headertxt">wavewatcher</h>
+
+</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav pullRight className="mr-auto">
-        <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-                Home
+        <NavItem >
         </NavItem>
         <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
                 About

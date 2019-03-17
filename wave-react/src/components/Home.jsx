@@ -10,18 +10,18 @@ export default class Home extends Component{
         return(
             <div>
                  <div className = "top-part">
-                    <p>This is what the waves are doing at Hustadvika right now:</p>
-                    <Image className = "picture1" src="https://charts-s3.msw.ms/archive/wave/750/7-1551312000-1.gif" />
-                
+                 <p> <h2 className= "h2">See what the waves are like at Hustadvika
+                 </h2>
+                 </p>
                 </div>
             <Container className = "container">
             <WaveCard />
                 <Jumbotron>
                     <h2>Welcome to wave watcher</h2>
-                    <p>This is how to build a website with react, react router and bootstrap</p>
-                    <Link to ="about">
-                <Button  bsStyle="primary"> About</Button>
-                </Link>
+                    <Link to ="More pictures">
+                    <p></p>
+                        <Button  bsStyle="primary"> More images</Button>
+                    </Link>
                 </Jumbotron>
 
                 <Image src="assets/surfer_header.jpg" className = "top-image1"  />

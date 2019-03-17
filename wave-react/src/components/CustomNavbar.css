@@ -39,3 +39,21 @@ nav.navbar, .navbar-default {
   color: white;
   background-color: transparent;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 6em;
+
+
+}
+.navbar-brand>img {
+  padding: 7px 14px;
+  height: 5em;
+  transform: rotateY(180deg)
+}
+.headertxt{
+font-size: 4em;
+padding-left: 0.5em;
+margin-left: -0.8em;
+}
