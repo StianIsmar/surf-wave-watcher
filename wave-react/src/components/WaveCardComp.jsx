@@ -22,14 +22,15 @@ class WaveCardComp extends Component {
           <Card className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333', padding: 0}}>
           <CardImg top width="100%" src={this.props.swellimg} alt="Card image cap" />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>  
-              Minimum breaking height:
+            {/*<CardTitle>Card title</CardTitle>*/}
+            <CardText> 
+              {console.log(this.props.swellDir)}
+              Wave Height:
               {" "}             
-              <div className= "waveheight">{this.props.minbreaking}</div>
+              <div className= "waveheight">{this.props.minbreaking} {this.props.swellDir}</div>
             </CardText>
-            <Button >{this.props.count}</Button>
+            <div> Wind: {this.props.windSpeed} {this.props.windDir}</div>
+            {/*<Button >{this.props.count}</Button>*/}
           </CardBody>
         </Card>
 
@@ -40,7 +41,10 @@ WaveCardComp.propTypes = {
     minbreaking: PropTypes.number,
     swellimg: PropTypes.string,
     key:PropTypes.number,
-    count: PropTypes.number
+    count: PropTypes.number,
+    windSpeed: PropTypes.number,
+    windDir: PropTypes.string,
+    swellDir: PropTypes.string
   }
 
 export default WaveCardComp;

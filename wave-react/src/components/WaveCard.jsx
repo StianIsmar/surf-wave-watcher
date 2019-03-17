@@ -47,7 +47,10 @@ class WaveCard extends Component {
               key = {it.timestamp}
               minbreaking={it.swell.absMinBreakingHeight}
               swellimg = {it.charts.swell}
+              windDir = {it.wind.compassDirection}
+              windSpeed = {it.wind.speed}
               count = {it.timestamp}
+              swellDir = {it.swell.components.combined.compassDirection}
               />
             )}
                         </CardColumns>

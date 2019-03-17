@@ -44,7 +44,7 @@ export function fetchWaveDataSuccess(waveData) {
 }
 export function fetchWaveData() {
   let fetchURL = "http://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673"
-  fetchURL = fetchURL + "&fields=timestamp,wind.*,swell.*,charts.*"
+  fetchURL = fetchURL + "&fields=localTimestamp,wind.*,swell.*,charts.*"
   console.log("GSGSGSGGSG")
 
   return dispatch => {
