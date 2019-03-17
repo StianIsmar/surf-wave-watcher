@@ -10,8 +10,8 @@ export default class Home extends Component{
         return(
             <div>
                  <div className = "top-part">
-                 <p> <h2 className= "h2">Scroll to see what the waves are like at Hustadvika
-                 </h2>
+                 <p> <div className= "h22">Scroll to see what the waves are like at Hustadvika
+                 </div>
                  </p>
                 </div>
             <Container className = "container">

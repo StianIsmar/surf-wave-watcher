@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import './WaveCard.css'
 import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
   CardSubtitle, CardBody } from 'reactstrap';
+  import "./WaveCardComp.css"
 
 /*<Card style={{ width: '18rem' }}>
             <Card.Img className = "swellimage" variant="top" src={this.props.swellimg} />
@@ -23,7 +24,10 @@ class WaveCardComp extends Component {
           <CardBody>
             <CardTitle>Card title</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>              {this.props.minbreaking}
+            <CardText>  
+              Minimum breaking height:
+              {" "}             
+              <div className= "waveheight">{this.props.minbreaking}</div>
             </CardText>
             <Button >{this.props.count}</Button>
           </CardBody>

@@ -47,6 +47,7 @@ class WaveCard extends Component {
               key = {it.timestamp}
               minbreaking={it.swell.absMinBreakingHeight}
               swellimg = {it.charts.swell}
+              count = {it.timestamp}
               />
             )}
                         </CardColumns>
