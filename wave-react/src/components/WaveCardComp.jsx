@@ -28,8 +28,8 @@ class WaveCardComp extends Component {
               Wave Height:
               {" "}             
               <div className= "waveheight">{this.props.minbreaking} {this.props.swellDir}</div>
+              <div> Wind: {this.props.windSpeed} {this.props.windDir}</div>
             </CardText>
-            <div> Wind: {this.props.windSpeed} {this.props.windDir}</div>
             {/*<Button >{this.props.count}</Button>*/}
           </CardBody>
         </Card>

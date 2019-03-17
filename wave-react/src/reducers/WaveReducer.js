@@ -8,7 +8,7 @@ import {
 const initialState = {
   items: [],
   error: null,
-  loading: false
+  loading: false,
 }
 
 // Reducer handling all the actions concerning the movies
