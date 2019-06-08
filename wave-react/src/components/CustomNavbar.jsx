@@ -10,7 +10,7 @@ export default class CustomNavbar extends Component {
 
   <Navbar.Brand href="/" to="/" componentClass ={Link} >   
   <img src="http://www.clker.com/cliparts/E/b/C/u/2/k/wave-white-hi.png" ></img>
-  <h className = "headertxt">wavewatcher</h>
+  <h className = "headertxt">1wavewatcher</h>
 
 </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
