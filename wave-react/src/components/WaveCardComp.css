@@ -5,3 +5,20 @@ font-size: 2em;
 color: white;
 padding: 0;
 }
+
+.waveicon{
+    height: 0.8em;
+    
+        display: flex;
+        align-items: center;
+        margin-top:3em;
+        margin-left: 1.5em;   
+}
+.JumboTron{
+    font-size: 1.5em;
+}
+@media all and (max-width: 500px) { /* screen size until 500px */
+    .JumboTron{
+        font-size: 0.9em; /* 0.8x default size */
+        }
+    }

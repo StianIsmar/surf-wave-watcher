@@ -1,3 +1,6 @@
+// This class maps the json file from the reducer
+//into the bootstrap card components
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchWaveData } from '../actions/WaveActions'

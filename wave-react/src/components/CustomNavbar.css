@@ -49,11 +49,21 @@ nav.navbar, .navbar-default {
 }
 .navbar-brand>img {
   padding: 7px 14px;
-  height: 1.5em;
+  height: 3em;
   transform: rotateY(180deg)
 }
 .headertxt{
-font-size: 1.5em;
+font-size: 3em;
 padding-left: 0.5em;
 margin-left: -0.8em;
+
+}
+@media screen and (max-width: 480px) 
+{
+    .headertxt {
+        font-size: 1.5em;
+    }
+    .navbar-brand>img {
+      height: 1.5em;
+    }
 }
