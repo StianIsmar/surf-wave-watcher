@@ -8,8 +8,6 @@ export default class CustomNavbar extends Component {
     return (
       <div>
 
-
-
 <Navbar bg="light" variant="dark" expand="lg">
 <Navbar.Brand href="/" to="/" componentClass ={Link} >   
 <img src="http://www.clker.com/cliparts/E/b/C/u/2/k/wave-white-hi.png" ></img>
@@ -18,8 +16,6 @@ export default class CustomNavbar extends Component {
     </Navbar.Brand>
   </Navbar>
       </div>
-
-
     )
   }
 }

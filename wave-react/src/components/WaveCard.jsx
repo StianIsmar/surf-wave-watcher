@@ -21,24 +21,6 @@ class WaveCard extends Component {
         this.props.getWaveData()
       }
     
-
-      /*createListItems(){
-        console.log("OKKKK:",this.props.items)  
-        return this.props.items.map((it) => {
-              return (
-                  <li keyParams = {it.timestamp}> {it.swell.absMinBreakingHeight} {it.wind.speed}</li>
-              )
-          })
-      }*/
-      //<div className="btn">
-      //<Button variant="primary" size="lg" onClick={() =>
-      //this.props.getWaveData()
-      //}>
-       //   Press to get latest forecast
-      //</Button>
-      // CardGroup Col sm="4"
-
-    
     render() {
       return (
         <div className="container">
@@ -63,9 +45,6 @@ class WaveCard extends Component {
       )
     }
   }
-
-
-    
 
 function mapStateToProps (state) {
     return ({
