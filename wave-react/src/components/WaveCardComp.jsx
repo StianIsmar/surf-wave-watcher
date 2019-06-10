@@ -22,7 +22,8 @@ class WaveCardComp extends Component {
           <div>
 
           {this.props.minbreaking > 0.8 ?(
-          <Card className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333', padding: 0}}>
+          <Card 
+          className="text-center" body inverse style={{ backgroundColor: '#333', borderColor: '#333', padding: 0}}>
             <CardImg top width="100%" src={this.props.swellimg} alt="Card image cap" />
             <CardBody>
             <Container>

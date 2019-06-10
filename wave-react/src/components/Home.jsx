@@ -23,11 +23,12 @@ export default class Home extends Component{
             <Jumbotron>
                     {/*<h2>Welcome to wave watcher</h2>*/}
                     <p className = "JumboTron">Scroll down to see what the waves are like at Hustadvika right now</p>
-                    <p className = "JumboTron">A wave icon indicates that the wave height is > 1 meter</p>
+                    <p className = "JumboTron">A wave icon {                <img className = "waveiconJumbo" src="http://www.clker.com/cliparts/E/b/C/u/2/k/wave-white-hi.png" ></img>
+} indicates that the wave height is > 0.8 meters</p>
                     <MDBIcon icon="angle-double-down" />
                 </Jumbotron>
             <WaveCard />
-                <Image src="assets/surfer_header.jpg" className = "top-image1"  />
+                4<Image src="assets/surfer_header.jpg" className = "top-image1"  />
                 <Row className = "show-grid text-center">
                     <Col xs = {12} sm= {4} className = "person-wrapper">
                     <Image src = "assets/maxresdefault.jpg" circle className = "profile-pic" />

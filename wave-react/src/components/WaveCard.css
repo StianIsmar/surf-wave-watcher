@@ -30,3 +30,7 @@ background-position: 50%;
   justify-content: flex-end;
   --background-image: url(${props => props.img});
 }
+.container{
+  margin-left: 0;
+  margin-right: 0;
+}

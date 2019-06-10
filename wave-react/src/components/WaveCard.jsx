@@ -1,5 +1,5 @@
 // This class maps the json file from the reducer
-//into the bootstrap card components
+//into the bootstrap card
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
@@ -38,31 +38,35 @@ class WaveCard extends Component {
       //</Button>
       // CardGroup Col sm="4"
 
+    
     render() {
-        return (
-            //<div className = "cardwrapper">
-            <CardGroup>
-                    <CardColumns>
-
-                
-            {this.props.items && this.props.items.map((it) =>
-              <WaveCardComp
+      return (
+        <div className="container">
+           <div className= "row">
+           {this.props.items && this.props.items.map((it)=>
+             {
+                return (
+                   <div className="col-md-4">
+                      <WaveCardComp
               key = {it.timestamp}
               minbreaking={it.swell.absMinBreakingHeight}
               swellimg = {it.charts.swell}
               windDir = {it.wind.compassDirection}
               windSpeed = {it.wind.speed}
               count = {it.timestamp}
-              swellDir = {it.swell.components.combined.compassDirection}
-              />
-            )}
-                        </CardColumns>
-
-            </CardGroup>
-            //</div>
-        );
+              swellDir = {it.swell.components.combined.compassDirection}/>
+                   </div>
+                 )
+             })}
+           </div>
+        </div>
+      )
     }
-}
+  }
+
+
+    
+
 function mapStateToProps (state) {
     return ({
       items: state.WaveReducer.items

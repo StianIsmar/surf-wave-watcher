@@ -82,3 +82,11 @@ font-size: 1em;
             font-size: 0.5em;
           }
     }
+
+.waveiconJumbo{
+    height: 0.8em;
+    -display: flex;
+    -align-items: center;
+    -margin-top:3em;
+    -margin-left: 1.5em;   
+    }
