@@ -4,7 +4,7 @@ It is built using ReactJS, nodeJS and bootstrap. The data is fetched from magics
 
 ![Alt text](/wave-react/screenshots/screenshot1.png?raw=true "Optional Title")
 
-# Build locally
+### Build locally
 1. Make sure [node](https://nodejs.org/en/download/) is installed.
 2. Clone this repo and cd into it.
 3. Run ```npm install``` or ```yarn``` if you are using yarn.
