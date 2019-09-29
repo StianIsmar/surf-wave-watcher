@@ -7,7 +7,7 @@ import fetchJsonp from 'fetch-jsonp';
 // Async action creator for fetching movies.
 export function fetchWaveData2() {
     //something()
-    let fetchURL = 'https://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673';
+    let fetchURL = 'http://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673';
     fetchURL = fetchURL + '&fields=timestamp,wind.*,swell.*,charts.*';
     console.log('fetchURL', fetchURL);
     return (dispatch) => {
@@ -37,7 +37,7 @@ export function fetchWaveDataSuccess(waveData) {
     };
 }
 export function fetchWaveData() {
-    let fetchURL = 'http://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673';
+    let fetchURL = 'https://magicseaweed.com/api/151b5ebfa8e5c565c9b3667a40de4725/forecast/?spot_id=673';
     fetchURL = fetchURL + '&fields=timestamp,wind.*,swell.*,charts.*';
     console.log('GSGSGSGGSG');
 
