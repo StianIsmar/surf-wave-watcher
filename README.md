@@ -2,7 +2,7 @@
 This repository contains a web application which shows the real time wave and wind forecast at a surfspot in Hustadvika, Norway.
 It is built using ReactJS with Redux, nodeJS and React Bootstrap. The data is fetched from magicseaweed.com API.
 
-![Screenshot of the application](/wave-react/screenshots/screenshot1.png?raw=true "Screenshot of the application")
+![Screenshot of the application](/screenshots/screenshot1.png?raw=true "Screenshot of the application")
 
 ### Build locally
 1. Make sure [node](https://nodejs.org/en/download/) is installed.
