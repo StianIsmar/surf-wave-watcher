@@ -1,3 +1,4 @@
+Depolyed at Heroku: https://surf-wave-watcher.herokuapp.com/
 # Surf-Wave-Watcher
 This repository contains a web application which shows the real time wave and wind forecast at a surfspot in Hustadvika, Norway.
 It is built using ReactJS with Redux, nodeJS and React Bootstrap. The data is fetched from magicseaweed.com API.
